@@ -4,62 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Image Carousel</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <main>
-    <ul class="slider">
-      <li id="slide-1" class="item">
-        <div class="content">
-          <h1 class="slide-title">Test Tubes</h1>
-          <p class="slide-description">Aliquam sodales aliquet bibendum. Praesent est sem, vehicula a quam id, pharetra molestie leo. Sed fringilla diam odio, molestie cursus nulla aliquet a. Donec eget maximus arcu. Nunc a ipsum at dolor vestibulum venenatis. Etiam sodales lorem quis diam commodo, nec sodales elit consectetur. Pellentesque vel tellus sit amet nisi facilisis semper a quis enim. Quisque id massa vitae magna feugiat ultricies in pulvinar diam. In vitae volutpat est. Aenean ut odio lacus.</p>
-          <button>Read More</button>
+    <main>
+        <div id="slideshow">
+            <ul>
+                <li id="slide-volvox" class="slide-item">
+                    <div class="inner-wrapper">
+                        <div class="slide-content">
+                            <h2 class="slide-title">Volvox</h2>
+                            <p class="slide-description">Volvox is a genus of freshwater algae found in ponds and ditches, belonging to the Chlorophyta class. They form spherical colonies of up to 50,000 cells. Each cell in the colony has two flagella, which coordinate to propel the sphere through water. Volvox is a model organism for studies on cellular differentiation and biofilm formation.</p>
+                            <button class="btn readmore primary">Read More</button>
+                        </div>
+                        <div class="slide-image">
+                            <div id="volvox-40x" class="image totalmag-40x"></div>
+                            <div id="volvox-100x" class="image totalmag-100x"></div>
+                            <div id="volvox-400x" class="image totalmag-400x"></div>
+                            <div class="magnification-controls">
+                                <button id="volvox-40x-btn" class="">40x</button>
+                                <button id="volvox-100x-btn" class="">100x</button>
+                                <button id="volvox-400x-btn" class="">400x</button>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide-cheek" class="slide-item">
+                    <div class="inner-wrapper">
+                        <div class="slide-content">
+                            <h2 class="slide-title">Human Cheek Cells</h2>
+                            <p class="slide-description">Human cheek cells are epithelial cells that line the inside of the mouth. They are flat, thin cells that are easily accessible and often used in basic biology experiments to demonstrate cell structure under a microscope. Cheek cells can reveal nuclei, cytoplasm, and cell membranes, making them excellent for introductory microscopy studies.</p>
+                            <button class="btn readmore primary">Read More</button>
+                        </div>
+                        <div class="slide-image">
+                            <div id="cheek-40x" class="image totalmag-40x"></div>
+                            <div id="cheek-100x" class="image totalmag-100x"></div>
+                            <div id="cheek-400x" class="image totalmag-400x"></div>
+                            <div class="magnification-controls">
+                                <button id="cheek-40x-btn" class="">40x</button>
+                                <button id="cheek-100x-btn" class="">100x</button>
+                                <button id="cheek-400x-btn" class="">400x</button>
+                              </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </li>
-      <li id="slide-2" class="item">
-        <div class="content">
-          <h1 class="slide-title">Microscopes</h1>
-          <p class="slide-description">Nulla cursus, felis sed faucibus lobortis, risus lacus luctus orci, ac efficitur purus ex sed nunc. Aliquam erat volutpat. Vivamus dictum suscipit eleifend. Vestibulum sit amet consequat eros. Quisque laoreet finibus hendrerit. Quisque in metus egestas, lobortis nibh eu, rutrum velit. Fusce a enim gravida, ultricies turpis ut, euismod augue. Suspendisse potenti. Sed ultricies laoreet leo quis efficitur. Quisque sollicitudin egestas sagittis.</p>
-          <button>Read More</button>
-        </div>
-      </li>
-      <li id="slide-3" class="item">
-        <div class="content">
-          <h1 class="slide-title">Blood Agar</h1>
-          <p class="slide-description">Phasellus vel pharetra quam, non tristique orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam nec augue pulvinar, pulvinar sem vel, elementum lorem. Praesent vitae orci eu diam laoreet semper. Duis consectetur id sapien non commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-          <button>Read More</button>
-        </div>
-      </li>
-      <li id="slide-4" class="item">
-        <div class="content">
-          <h1 class="slide-title">Microbes</h1>
-          <p class="slide-description">Quisque ut nulla felis. Ut finibus hendrerit purus quis tempor. Vivamus sit amet libero nec eros pharetra accumsan. Sed venenatis, nisl eu elementum volutpat, urna mi euismod purus, fringilla volutpat velit ex sit amet quam. Vivamus scelerisque consectetur sem, vel fringilla dui sagittis a. Vestibulum ut magna ornare, semper tellus vitae, ultrices eros. Vivamus dolor dui, vulputate eget molestie non, elementum vitae leo.</p>
-          <button>Read More</button>
-        </div>
-      </li>
-      <li id="slide-5" class="item">
-        <div class="content">
-          <h1 class="slide-title">Experiments</h1>
-          <p class="slide-description">Ut efficitur lacus ante, eu mattis ligula dignissim a. Nulla et odio ut nisl volutpat dignissim. Nam rhoncus augue vitae neque fringilla ullamcorper. Morbi sed imperdiet ligula. In vulputate urna eu posuere condimentum. Nunc sed mauris et erat lacinia egestas. Fusce congue elit quis purus pharetra, vitae congue purus ullamcorper. Etiam laoreet vitae est in pellentesque. Etiam non velit in ligula vestibulum consequat ac in dui.</p>
-          <button>Read More</button>
-        </div>
-      </li>
-      <li id="slide-6" class="item">
-        <div class="content">
-          <h1 class="slide-title">Liquid Cultures</h1>
-          <p class="slide-description">Suspendisse laoreet massa orci, vitae commodo mi ultricies sit amet. Pellentesque hendrerit, purus sit amet congue placerat, ligula orci pharetra elit, vel venenatis neque quam a lacus. Proin tempor pellentesque quam, sed luctus velit aliquet faucibus. Quisque eget vestibulum urna, ut porta leo. Praesent id metus pretium, consectetur sem vitae, vestibulum nulla. Vivamus vitae fermentum leo. Ut efficitur lacus ante, eu mattis ligula dignissim a.</p>
-          <button>Read More</button>
-        </div>
-      </li>
-    </ul>
-    <nav class="nav">
-      <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-      <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-    </nav>
-  </main>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="assets/js/main.js"></script>
+    </main>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
