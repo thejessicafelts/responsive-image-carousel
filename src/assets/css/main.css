@@ -7,7 +7,7 @@
 }
 
 #slideshow {
-    background: mediumvioletred;
+    background: black;
 }
 
 #slide-volvox {
@@ -46,7 +46,7 @@
 .slide-image {
     width: calc(75vh - 100px);
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 .slide-image .image {
@@ -55,7 +55,7 @@
     border: 3px solid black;
     border-radius: 50%;
     position: absolute;
-    top: calc((100vh - (75vh - 100px)) / 2);
+    top: calc(((100vh - (75vh - 100px)) - 50px) / 2);
     left: 0;
     display: flex;
     flex-direction: column;
@@ -104,19 +104,6 @@ button.btn:hover {
     cursor: not-allowed;
 }
 
-li.slide-item {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-li.slide-item:first-child {
-    border-top: 4px solid black;
-}
-
-li.slide-item:last-child {
-    border-bottom: 4px solid black;
-}
-
 #slide-volvox .slide-image .totalmag-40x.active {
     background-image: url(../images/volvox/volvox-40.jpg);
     background-size: cover;
@@ -157,7 +144,7 @@ li.slide-item:last-child {
     width: 220px;
     margin: 0 auto;
     position: absolute;
-    bottom: 90px;
+    bottom: 60px;
     left: calc(50% - 110px);
     display: flex;
     flex-direction: row;
@@ -182,4 +169,70 @@ li.slide-item:last-child {
 .magnification-controls button.active {
     background: black;
     color: white;
+}
+
+#slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Set to the desired width */
+    height: calc(100vh - 50px); /* Adjust based on content or set a fixed height */
+}
+
+#slideshow .slide-item {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start off-screen to the right */
+    width: 100%;
+    transition: left 1s ease-in-out; /* Smooth transition for the 'left' property */
+    opacity: 0; /* Make slide invisible when it's not active */
+}
+
+#slideshow .slide-item.active-slide {
+    opacity: 1; /* Make the active slide fully visible */
+    left: 0; /* Position the active slide inside the slideshow container */
+}
+
+#slideshow ul {
+    height: calc(100vh - 50px);
+}
+
+.slideshow-controls {
+    background: #000000;
+    color: white;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.slideshow-controls .prev,
+.slideshow-controls .next {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 8px 10px;
+    border: none;
+}
+
+.slideshow-controls .prev:hover,
+.slideshow-controls .next:hover {
+    background-color: #bbb; /* Darker shade on hover */
+}
+
+.dots .dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px 5px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dots .dot.active-dot {
+    background-color: #717171; /* Highlight the active dot */
 }
